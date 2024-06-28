@@ -2,6 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const ClearPostSection = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  }; 
   return (
     <>
         <>
@@ -21,7 +27,7 @@ const ClearPostSection = () => {
                 normal that has evolved from
               </p>
               <Link
-                to="/about"
+                to="/about" onClick={ scrollToTop}
                 className="theme-btn wow fadeInUp"
                 data-wow-delay=".7s"
               >

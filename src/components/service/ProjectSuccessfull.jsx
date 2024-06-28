@@ -9,7 +9,7 @@ const ProjectSuccessfull = () => {
       className="section-title text-center wow fadeInUp"
       data-wow-delay=".3s"
       style={{
-        visibility: "hidden",
+        visibility: "visible",
         animationDelay: "0.3s",
         animationName: "none"
       }}
@@ -24,14 +24,14 @@ const ProjectSuccessfull = () => {
         className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
         data-wow-delay=".3s"
         style={{
-          visibility: "hidden",
+          visibility: "visible",
           animationDelay: "0.3s",
           animationName: "none"
         }}
       >
         <div className="project-successful-items">
           <div className="icon">
-            <i className="fas fa-stars" />
+            <i class="fa-regular fa-star"></i>
           </div>
           <div className="content">
             <h5>
@@ -49,14 +49,14 @@ const ProjectSuccessfull = () => {
         className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
         data-wow-delay=".5s"
         style={{
-          visibility: "hidden",
+          visibility: "visible",
           animationDelay: "0.5s",
           animationName: "none"
         }}
       >
-        <div className="project-successful-items active">
+        <div className="project-successful-items">
           <div className="icon">
-            <i className="fas fa-stars" />
+            <i class="fa-regular fa-star"></i>
           </div>
           <div className="content">
             <h5>
@@ -74,14 +74,14 @@ const ProjectSuccessfull = () => {
         className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
         data-wow-delay=".7s"
         style={{
-          visibility: "hidden",
+          visibility: "visible",
           animationDelay: "0.7s",
           animationName: "none"
         }}
       >
         <div className="project-successful-items">
           <div className="icon">
-            <i className="fas fa-stars" />
+            <i class="fa-regular fa-star"></i>
           </div>
           <div className="content">
             <h5>

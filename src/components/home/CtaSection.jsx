@@ -2,6 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const CtaSection = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  }; 
   return (
     <>
         <>
@@ -21,7 +27,7 @@ const CtaSection = () => {
             fingertrips
           </h2>
           <div className="cta-button mt-4 wow fadeInUp" data-wow-delay=".5s">
-            <Link to="/contact" className="theme-btn hover-white">
+            <Link to="/contact" onClick={scrollToTop} className="theme-btn hover-white">
               DISCOVER MORE
             </Link>
           </div>

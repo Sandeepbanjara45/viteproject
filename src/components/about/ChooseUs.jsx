@@ -2,6 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const ChooseUs = () => {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  };
+  
   return (
     <>
         <section className="choose-us-section fix section-padding">
@@ -116,20 +124,19 @@ const ChooseUs = () => {
               className="about-author wow fadeInUp"
               data-wow-delay=".9s"
               style={{
-                visibility: "hidden",
+                visibility:"visible",
                 animationDelay: "0.9s",
                 animationName: "none"
               }}
             >
               <div className="about-button">
-                <Link to="/about" className="theme-btn">
+                <Link to="/about" onClick={scrollToTop} className="theme-btn">
                   {" "}
                   Discover More{" "}
                 </Link>
               </div>
               <div className="author-image">
-                <img src="./src/assets/img/about/author.webp" alt="author-img" />
-                <img src="./src/assets/img/about/signature.webp" alt="signature" />
+                {/* <img src="./src/assets/img/about/signature.webp" alt="signature" /> */}
               </div>
             </div>
           </div>

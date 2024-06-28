@@ -2,6 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const ErrorSection = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  }; 
   return (
     <>
         <div className="error-section fix section-padding">
@@ -21,7 +27,7 @@ const ErrorSection = () => {
             <img src="./src/assets/img/error.webp" alt="img" />
           </div>
           <Link
-            to="/"
+            to="/" onClick={scrollToTop}
             className="theme-btn wow fadeInUp"
             data-wow-delay=".5s"
             style={{

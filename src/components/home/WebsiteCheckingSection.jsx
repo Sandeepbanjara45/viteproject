@@ -2,6 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const WebsiteCheckingSection = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  }; 
   return (
     <>
         <section className="website-checking section-padding">
@@ -10,7 +16,7 @@ const WebsiteCheckingSection = () => {
       <div className="section-title text-center">
         <span
           className="text-white wow fadeInUp"
-          style={{ visibility: "hidden", animationName: "none" }}
+          style={{ visibility: "visible", animationName: "none" }}
         >
           Ready to buildup
         </span>
@@ -18,7 +24,7 @@ const WebsiteCheckingSection = () => {
           className="text-white wow fadeInUp"
           data-wow-delay=".3s"
           style={{
-            visibility: "hidden",
+            visibility: "visible",
             animationDelay: "0.3s",
             animationName: "none"
           }}
@@ -34,7 +40,7 @@ const WebsiteCheckingSection = () => {
                 className="check-items d-flex align-items-center wow fadeInUp"
                 data-wow-delay=".5s"
                 style={{
-                  visibility: "hidden",
+                  visibility: "visible",
                   animationDelay: "0.5s",
                   animationName: "none"
                 }}
@@ -51,7 +57,7 @@ const WebsiteCheckingSection = () => {
                 data-wow-delay=".7s"
                 type="submit"
                 style={{
-                  visibility: "hidden",
+                  visibility: "visible",
                   animationDelay: "0.7s",
                   animationName: "none"
                 }}
@@ -63,12 +69,12 @@ const WebsiteCheckingSection = () => {
               className="wow fadeInUp"
               data-wow-delay=".9s"
               style={{
-                visibility: "hidden",
+                visibility: "visible",
                 animationDelay: "0.9s",
                 animationName: "none"
               }}
             >
-              Please check our <Link to="/privacy-policy">Privacy Policy</Link> to find
+              Please check our <Link to="/privacy-policy" onClick={scrollToTop } >Privacy Policy</Link> to find
               out how we manage and protect you data
             </h6>
           </div>
@@ -79,7 +85,7 @@ const WebsiteCheckingSection = () => {
               className="col-lg-6 wow fadeInUp"
               data-wow-delay=".3s"
               style={{
-                visibility: "hidden",
+                visibility: "visible",
                 animationDelay: "0.3s",
                 animationName: "none"
               }}
@@ -101,7 +107,7 @@ const WebsiteCheckingSection = () => {
               className="col-lg-6 wow fadeInUp"
               data-wow-delay=".5s"
               style={{
-                visibility: "hidden",
+                visibility: "visible",
                 animationDelay: "0.5s",
                 animationName: "none"
               }}

@@ -2,6 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const ServiceIT = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  };
   return (
     <>
          <section className="Service-details fix section-padding">
@@ -17,7 +23,7 @@ const ServiceIT = () => {
                   <div className=" service-category ">
                     <Link
                       to="/it-service"
-                      className=" active teamblog text-black"
+                      className=" active teamblog text-black" onClick={scrollToTop}
                     >
                       IT Development &nbsp;
                   <i className="fal fa-long-arrow-right" />
@@ -25,7 +31,7 @@ const ServiceIT = () => {
                     </Link>
                     <Link
                       to="/web-development"
-                      className="teamblog text-black"
+                      className="teamblog text-black" onClick={scrollToTop}
                     >
                       Web Development &nbsp;
                   <i className="fal fa-long-arrow-right" />
@@ -33,7 +39,7 @@ const ServiceIT = () => {
                     </Link>
                     <Link
                       to="/graphic-designing"
-                      className="teamblog text-black"
+                      className="teamblog text-black" onClick={scrollToTop}
                     >
                       Graphic Design & Video Editing &nbsp;
                   <i className="fal fa-long-arrow-right" />
@@ -41,15 +47,15 @@ const ServiceIT = () => {
                     </Link>
                     <Link
                       to="/digital-marketing"
-                      className="teamblog text-black"
+                      className="teamblog text-black" onClick={scrollToTop}
                     >
                       Digital Marketing &nbsp;
                   <i className="fal fa-long-arrow-right" />
 
                     </Link>
                     <Link
-                      to="/web-development"
-                      className="teamblog text-black"
+                      to="/wordpress"
+                      className="teamblog text-black" onClick={scrollToTop}
                     >
                       Wordpress &nbsp;
                   <i className="fal fa-long-arrow-right" />
@@ -57,7 +63,7 @@ const ServiceIT = () => {
                     </Link>
                     <Link
                       to="/android-development"
-                      className="teamblog text-black"
+                      className="teamblog text-black" onClick={scrollToTop}
                     >
                       Android Development &nbsp;
                   <i className="fal fa-long-arrow-right" />
@@ -68,7 +74,7 @@ const ServiceIT = () => {
                 <div
                   className="service-post bg-cover mb-4"
                   style={{
-                    backgroundImage: 'url("./src/assets/img/service/service.webp")',
+                    backgroundImage: 'url("./src/assets/img/services/details.webp")',
                   }}
                 >
                   <div className="content">
@@ -76,7 +82,7 @@ const ServiceIT = () => {
                       Need Any Types <br /> of Service <br /> from us
                     </h3>
                     <Link
-                      to="/contact"
+                      to="/contact" onClick={scrollToTop}
                       className="theme-btn bg-white"
                     >
                       FIND SOLUTION
@@ -86,13 +92,12 @@ const ServiceIT = () => {
                 <div className="service-sidebar-widget mb-4">
                   <div className="service-info">
                     <div className="icon">
-                  <i className="flaticon-telephone" />
-
+                    <i class="fa-solid fa-phone-volume"></i>
                     </div>
-                    <div className="content">
+                    <div className="content side_content">
                       <p>You can call anytime</p>
-                      <h5 className="mob">
-                        Free <Link to="tel:+997868765">+99 (786) 8765</Link>
+                      <h5>
+                        Free <Link to="tel:+997868765">+91 9758487685</Link>
                       </h5>
                     </div>
                   </div>
@@ -102,7 +107,7 @@ const ServiceIT = () => {
             <div className="col-12 col-lg-8 order-1 order-md-2">
               <div className="service-details-content">
                 <h2>
-                  World best web <br /> design service provider.
+                  World best web <br /> design service provider.sandeep banjara
                 </h2>
                 <p>
                   We embrace holistic development and support for employees with
@@ -113,7 +118,7 @@ const ServiceIT = () => {
                 <div
                   className="details-image bg-cover mt-4"
                   style={{
-                    backgroundImage: 'url("./src/assets/img/service/details.webp")',
+                    backgroundImage: 'url("./src/assets/img/services/details.webp")',
                   }}
                 />
                 <h3 className="details-title">Cloud Service</h3>

@@ -1,5 +1,4 @@
 import React from 'react'
-import Preloader from '../components/home/Preloader'
 import HeroSection from '../components/home/HeroSection'
 import MarqueSection from '../components/home/MarqueSection'
 import ContactUs from '../components/home/ContactUs'
@@ -12,12 +11,10 @@ import CtaSection from '../components/home/CtaSection'
 import WebsiteCheckingSection from '../components/home/WebsiteCheckingSection'
 import ServiceProductiveSection from '../components/home/ServiceProductiveSection'
 import NewsSection from '../components/home/NewsSection'
-import CtaSection2 from '../components/home/CtaSection2'
 
 const Home = () => {
   return (
     <>
-        {/* <Preloader/> */}
         <HeroSection/>
         <MarqueSection/>
         <ContactUs/>
@@ -30,7 +27,6 @@ const Home = () => {
         <WebsiteCheckingSection/>
         <ServiceProductiveSection/>
         <NewsSection/>
-        <CtaSection2/>
 
 
     </>

@@ -2,6 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const ServiceGD = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  }; 
   return (
     <>
        <section className="Service-details fix section-padding">
@@ -15,27 +21,27 @@ const ServiceGD = () => {
                 <h4>Catagories</h4>
               </div>
               <div className="service-category">
-                <Link to="it-service" >
+                <Link to="/it-service" onClick={scrollToTop} >
                   IT Department
                   <i className="fal fa-long-arrow-right" />
                 </Link>
-                <Link to="/web-development">
+                <Link to="/web-development" onClick={scrollToTop} >
                   Web Development
                   <i className="fal fa-long-arrow-right" />
                 </Link>
-                <Link to="/digital-marketing">
+                <Link to="/digital-marketing" onClick={scrollToTop} >
                   Digital Marketing
                   <i className="fal fa-long-arrow-right" />
                 </Link>
-                <Link to="/graphic-designing" className="active">
+                <Link to="/graphic-designing" className="active" onClick={scrollToTop} >
                   Graphic Designing
                   <i className="fal fa-long-arrow-right" />
                 </Link>
-                <Link to="/google">
+                <Link to="/google" onClick={scrollToTop} >
                   Google Ads
                   <i className="fal fa-long-arrow-right" />
                 </Link>
-                <Link to="/meta">
+                <Link to="/meta" onClick={scrollToTop} >
                   Meta Ads
                   <i className="fal fa-long-arrow-right" />
                 </Link>
@@ -44,31 +50,32 @@ const ServiceGD = () => {
             <div
               className="service-post bg-cover mb-4"
               style={{
-                backgroundImage: 'url("./src/assets/img/service/service.webp")'
+                backgroundImage: 'url("./src/assets/img/services/details.webp")'
               }}
             >
               <div className="content">
                 <h3>
                   Need Any Types <br /> of Service <br /> from us
                 </h3>
-                <Link to="/contact" className="theme-btn bg-white">
+                <Link to="/contact" className="theme-btn bg-white" onClick={scrollToTop} >
                   FIND SOLUTION
                 </Link>
               </div>
             </div>
             <div className="service-sidebar-widget mb-4">
-              <div className="service-info">
-                <div className="icon">
-                  <i className="flaticon-telephone" />
+                  <div className="service-info">
+                    <div className="icon">
+                    <i class="fa-solid fa-phone-volume"></i>
+
+                    </div>
+                    <div className="content side_content">
+                      <p>You can call anytime</p>
+                      <h5>
+                        Free <Link to="tel:+997868765">+91 96538 20555</Link>
+                      </h5>
+                    </div>
+                  </div>
                 </div>
-                <div className="content">
-                  <p>You can call anytime</p>
-                  <h5>
-                    Free <Link to="tel:+997868765">+99 (786) 8765</Link>
-                  </h5>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <div className="col-12 col-lg-8 order-1 order-md-2">
@@ -85,7 +92,7 @@ const ServiceGD = () => {
             <div
               className="details-image bg-cover mt-4"
               style={{
-                backgroundImage: 'url("./src/assets/img/service/details.webp")'
+                backgroundImage: 'url("./src/assets/img/services/details.webp")'
               }}
             />
             <h3 className="details-title">Cloud Service</h3>

@@ -2,6 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const FeatureSection = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  }; 
   return (
     <>
         <>
@@ -26,7 +32,7 @@ const FeatureSection = () => {
                 your achive the goals you
               </p>
               <div className="feature-button wow fadeInUp" data-wow-delay=".7s">
-                <Link to="/about" className="theme-btn">
+                <Link to="/about" onClick={scrollToTop} className="theme-btn">
                   DISCOVER MORE
                 </Link>
               </div>

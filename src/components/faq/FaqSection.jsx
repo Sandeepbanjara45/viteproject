@@ -23,7 +23,7 @@ const FaqSection = () => {
               animationName: "fadeInUp"
             }}
           >
-            Frequently asked question <br /> &amp; answer here
+            Frequently asked question <br /> &amp; answer here  sandeep
           </h2>
         </div>
         <div className="faq-image">
@@ -45,7 +45,7 @@ const FaqSection = () => {
               <form action="#">
                 <input type="text" placeholder="Search...." />
                 <button type="submit">
-                  <i className="far fa-search" />
+                <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
               </form>
             </div>
@@ -54,7 +54,7 @@ const FaqSection = () => {
               data-wow-delay=".5s"
               style={{
                 backgroundImage: 'url("./src/assets/img/faq/faq-4.webp")',
-                visibility: "hidden",
+                visibility: "visible",
                 animationDelay: "0.5s",
                 animationName: "none"
               }}

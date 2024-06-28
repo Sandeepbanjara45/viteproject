@@ -2,6 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Serviceandro = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  }; 
   return (
     <>
          <section className="Service-details fix section-padding">
@@ -16,7 +22,7 @@ const Serviceandro = () => {
                   </div>
                   <div className="service-category">
                     <Link
-                      to="/it-service"
+                      to="/it-service" onClick={scrollToTop }
                       className="teamblog text-black"
                     >
                       IT Department &nbsp;
@@ -24,28 +30,28 @@ const Serviceandro = () => {
                     </Link>
                     <Link
                       to="/web-development"
-                      className="teamblog text-black"
+                      className="teamblog text-black" onClick={scrollToTop }
                     >
                       Web Development &nbsp;
                       <i class="fa-solid fa-arrow-right-long"></i>
                     </Link>
                     <Link
                       to="/graphic-designing"
-                      className="teamblog text-black"
+                      className="teamblog text-black" onClick={scrollToTop }
                     >
                       Ui/Ux Designing &nbsp;
                       <i class="fa-solid fa-arrow-right-long"></i>
                     </Link>
                     <Link
                       to="/android-development"
-                      className=" active teamblog text-black"
+                      className=" active teamblog text-black" onClick={scrollToTop }
                     >
                       Android Development &nbsp;
                       <i class="fa-solid fa-arrow-right-long"></i>
                     </Link>
                     <Link
-                      to="/web-development"
-                      className="teamblog text-black"
+                      to="/wordpress"
+                      className="teamblog text-black" onClick={scrollToTop }
                     >
                       Wordpress &nbsp;
                       <i class="fa-solid fa-arrow-right-long"></i>
@@ -56,7 +62,7 @@ const Serviceandro = () => {
                 <div
                   className="service-post bg-cover mb-4"
                   style={{
-                    backgroundImage: 'url("./src/assets/img/service/service.webp")',
+                    backgroundImage:'url("./src/assets/img/services/details.webp")',
                   }}
                 >
                   <div className="content">
@@ -65,7 +71,7 @@ const Serviceandro = () => {
                     </h3>
                     <Link
                       to="/contact"
-                      className="theme-btn bg-white"
+                      className="theme-btn bg-white" onClick={scrollToTop }
                     >
                       FIND SOLUTION
                     </Link>
@@ -100,7 +106,7 @@ const Serviceandro = () => {
                 <div
                   className="details-image bg-cover mt-4"
                   style={{
-                    backgroundImage: 'url("./src/assets/img/service/details.webp")',
+                    backgroundImage: 'url("./src/assets/img/services/details.webp")',
                   }}
                 />
                 <h3 className="details-title">Cloud Service</h3>

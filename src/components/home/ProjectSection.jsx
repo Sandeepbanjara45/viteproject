@@ -2,6 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const ProjectSection = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  }; 
   return (
     <>
         <>
@@ -28,12 +34,12 @@ const ProjectSection = () => {
                 style={{ backgroundImage: 'url("./src/assets/img/project/14.webp")' }}
               >
                 <div className="project-content">
-                  <Link to="/project" className="icon">
+                  <Link to="/project" onClick={scrollToTop} className="icon">
                     <i className="far fa-arrow-right" />
                   </Link>
                   <p>San Fransisco</p>
                   <h4>
-                    <Link to="/project">Digital Consulting</Link>
+                    <Link to="/project" onClick={scrollToTop} >Digital Consulting</Link>
                   </h4>
                 </div>
               </div>
@@ -46,12 +52,12 @@ const ProjectSection = () => {
                 style={{ backgroundImage: 'url("./src/assets/img/project/15.webp")' }}
               >
                 <div className="project-content">
-                  <Link to="/project" className="icon">
+                  <Link to="/project" onClick={scrollToTop} className="icon">
                     <i className="far fa-arrow-right" />
                   </Link>
                   <p>San Fransisco</p>
                   <h4>
-                    <Link to="/project">Digital Consulting</Link>
+                    <Link to="/project" onClick={scrollToTop} >Digital Consulting</Link>
                   </h4>
                 </div>
               </div>
@@ -64,12 +70,12 @@ const ProjectSection = () => {
                 style={{ backgroundImage: 'url("./src/assets/img/project/16.webp")' }}
               >
                 <div className="project-content">
-                  <Link to="/project" className="icon">
+                  <Link to="/project" onClick={scrollToTop} className="icon">
                     <i className="far fa-arrow-right" />
                   </Link>
                   <p>San Fransisco</p>
                   <h4>
-                    <Link to="/project">Digital Consulting</Link>
+                    <Link to="/project" onClick={scrollToTop} >Digital Consulting</Link>
                   </h4>
                 </div>
               </div>
@@ -82,12 +88,12 @@ const ProjectSection = () => {
                 style={{ backgroundImage: 'url("./src/assets/img/project/06.webp")' }}
               >
                 <div className="project-content">
-                  <Link to="/project" className="icon">
+                  <Link to="/project" onClick={scrollToTop} className="icon">
                     <i className="far fa-arrow-right" />
                   </Link>
                   <p>San Fransisco</p>
                   <h4>
-                    <Link to="/project">Digital Consulting</Link>
+                    <Link to="/project" onClick={scrollToTop} >Digital Consulting</Link>
                   </h4>
                 </div>
               </div>

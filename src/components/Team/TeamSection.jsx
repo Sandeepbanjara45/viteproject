@@ -2,6 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const TeamSection = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  };
   return (
     <>
         <section className="team-section fix section-padding">
@@ -23,31 +29,9 @@ const TeamSection = () => {
           >
             <div className="team-content-2">
               <h4>
-                <Link to="/team"> Salman Islam </Link>
+                <Link to="/team" onClick={scrollToTop} > Salman Islam </Link>
               </h4>
               <p>Developer</p>
-            </div>
-            <div className="social-profile">
-              <ul>
-                <li>
-                  <Link to="#">
-                    <i className="fab fa-linkedin-in" />
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#">
-                    <i className="fab fa-instagram" />
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#">
-                    <i className="fab fa-facebook-f" />
-                  </Link>
-                </li>
-              </ul>
-              <span className="plus-btn">
-                <i className="fas fa-share-alt" />
-              </span>
             </div>
           </div>
         </div>
@@ -61,39 +45,18 @@ const TeamSection = () => {
           animationName: "fadeInUp"
         }}
       >
-        <div className="team-card-items style-2 active">
+        <div className="team-card-items style-2">
           <div
             className="team-image bg-cover"
             style={{ backgroundImage: "url(./src/assets/img/team/06.webp)" }}
           >
             <div className="team-content-2">
               <h4>
-                <Link to="/team"> Janes Cooper </Link>
+                <Link to="/team" onClick={scrollToTop} > Janes Cooper </Link>
               </h4>
               <p>Designer</p>
             </div>
-            <div className="social-profile">
-              <ul>
-                <li>
-                  <Link to="#">
-                    <i className="fab fa-linkedin-in" />
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#">
-                    <i className="fab fa-instagram" />
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#">
-                    <i className="fab fa-facebook-f" />
-                  </Link>
-                </li>
-              </ul>
-              <span className="plus-btn">
-                <i className="fas fa-share-alt" />
-              </span>
-            </div>
+          
           </div>
         </div>
       </div>
@@ -113,32 +76,11 @@ const TeamSection = () => {
           >
             <div className="team-content-2">
               <h4>
-                <Link to="/team"> James Bond </Link>
+                <Link to="/team" onClick={scrollToTop} > James Bond </Link>
               </h4>
               <p>Creator</p>
             </div>
-            <div className="social-profile">
-              <ul>
-                <li>
-                  <Link to="#">
-                    <i className="fab fa-linkedin-in" />
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#">
-                    <i className="fab fa-instagram" />
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#">
-                    <i className="fab fa-facebook-f" />
-                  </Link>
-                </li>
-              </ul>
-              <span className="plus-btn">
-                <i className="fas fa-share-alt" />
-              </span>
-            </div>
+           
           </div>
         </div>
       </div>
@@ -158,32 +100,11 @@ const TeamSection = () => {
           >
             <div className="team-content-2">
               <h4>
-                <Link to="/team"> Lucas Henry </Link>
+                <Link to="/team" onClick={scrollToTop} > Lucas Henry </Link>
               </h4>
               <p>Developer</p>
             </div>
-            <div className="social-profile">
-              <ul>
-                <li>
-                  <Link to="#">
-                    <i className="fab fa-linkedin-in" />
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#">
-                    <i className="fab fa-instagram" />
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#">
-                    <i className="fab fa-facebook-f" />
-                  </Link>
-                </li>
-              </ul>
-              <span className="plus-btn">
-                <i className="fas fa-share-alt" />
-              </span>
-            </div>
+          
           </div>
         </div>
       </div>
@@ -203,32 +124,11 @@ const TeamSection = () => {
           >
             <div className="team-content-2">
               <h4>
-                <Link to="/team"> Theodore Daniel </Link>
+                <Link to="/team" onClick={scrollToTop} > heodore Daniel </Link>
               </h4>
               <p>Designer</p>
             </div>
-            <div className="social-profile">
-              <ul>
-                <li>
-                  <Link to="#">
-                    <i className="fab fa-linkedin-in" />
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#">
-                    <i className="fab fa-instagram" />
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#">
-                    <i className="fab fa-facebook-f" />
-                  </Link>
-                </li>
-              </ul>
-              <span className="plus-btn">
-                <i className="fas fa-share-alt" />
-              </span>
-            </div>
+           
           </div>
         </div>
       </div>
@@ -248,32 +148,11 @@ const TeamSection = () => {
           >
             <div className="team-content-2">
               <h4>
-                <Link to="/team"> Asher Samuel </Link>
+                <Link to="/team" onClick={scrollToTop} > Asher Samuel </Link>
               </h4>
               <p>Creator</p>
             </div>
-            <div className="social-profile">
-              <ul>
-                <li>
-                  <Link to="#">
-                    <i className="fab fa-linkedin-in" />
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#">
-                    <i className="fab fa-instagram" />
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#">
-                    <i className="fab fa-facebook-f" />
-                  </Link>
-                </li>
-              </ul>
-              <span className="plus-btn">
-                <i className="fas fa-share-alt" />
-              </span>
-            </div>
+           
           </div>
         </div>
       </div>

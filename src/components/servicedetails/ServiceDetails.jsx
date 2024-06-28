@@ -2,6 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const ServiceDetails = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  }; 
   return (
     <>
          <section className="Service-details fix section-padding">
@@ -17,50 +23,44 @@ const ServiceDetails = () => {
                   <div className="service-category">
                     <Link
                       to="/service"
-                      className="active teamblog text-black"
+                      className="active teamblog text-black" onClick={scrollToTop}
                     >
                       Our Service &nbsp;
-                      {/* <FaArrowRightLong /> */}
                       <i class="fa-solid fa-arrow-right-long"></i>
                     </Link>
                     <Link
                       to="/web-development"
-                      className="teamblog text-black"
+                      className="teamblog text-black" onClick={scrollToTop}
                     >
                       Web Development &nbsp;
-                      {/* <FaArrowRightLong /> */}
                       <i class="fa-solid fa-arrow-right-long"></i>
                     </Link>
                     <Link
                       to="/influencer-marketing"
-                      className="teamblog text-black"
+                      className="teamblog text-black" onClick={scrollToTop}
                     >
                       Influencer Marketing &nbsp;
-                      {/* <FaArrowRightLong /> */}
                       <i class="fa-solid fa-arrow-right-long"></i>
                     </Link>
                     <Link
                       to="/digital-marketing"
-                      className="teamblog text-black"
+                      className="teamblog text-black" onClick={scrollToTop}
                     >
                       Digital Marketing &nbsp;
-                      {/* <FaArrowRightLong /> */}
                       <i class="fa-solid fa-arrow-right-long"></i>
                     </Link>
                     <Link
                       to="/graphic-designing"
-                      className="teamblog text-black"
+                      className="teamblog text-black" onClick={scrollToTop}
                     >
                       Graphic Designing &nbsp;
-                      {/* <FaArrowRightLong /> */}
                       <i class="fa-solid fa-arrow-right-long"></i>
                     </Link>
                     <Link
                       to="/android-development"
-                      className="teamblog text-black"
+                      className="teamblog text-black" onClick={scrollToTop}
                     >
                       Android Development &nbsp;
-                      {/* <FaArrowRightLong /> */}
                       <i class="fa-solid fa-arrow-right-long"></i>
                     </Link>
                   </div>
@@ -68,7 +68,7 @@ const ServiceDetails = () => {
                 <div
                   className="service-post bg-cover mb-4"
                   style={{
-                    backgroundImage: 'url("./src/assets/img/service/service.webp")',
+                    backgroundImage: 'url("./src/assets/img/services/details.webp")',
                   }}
                 >
                   <div className="content">
@@ -76,7 +76,7 @@ const ServiceDetails = () => {
                       Need Any Types <br /> of Service <br /> from us
                     </h3>
                     <Link
-                      to="/contact"
+                      to="/contact" onClick={scrollToTop}
                       className="theme-btn bg-white"
                     >
                       FIND SOLUTION
@@ -86,7 +86,6 @@ const ServiceDetails = () => {
                 <div className="service-sidebar-widget mb-4">
                   <div className="service-info">
                     <div className="icon">
-                      {/* <FiPhoneCall /> */}
                       <i class="fa-solid fa-phone-volume"></i>
                     </div>
                     <div className="content">
@@ -113,7 +112,7 @@ const ServiceDetails = () => {
                 <div
                   className="details-image bg-cover mt-4"
                   style={{
-                    backgroundImage: 'url("./src/assets/img/service/details.webp")',
+                    backgroundImage: 'url("./src/assets/img/services/details.webp")',
                   }}
                 />
                 <h3 className="details-title">Cloud Service</h3>
@@ -132,17 +131,14 @@ const ServiceDetails = () => {
                         <h3 className="details-title">Our Goals</h3>
                         <ul>
                           <li>
-                            {/* <FaCheck /> */}
                             <i class="fa-solid fa-check"></i>
                             Aliquam accumsan et ante id
                           </li>
                           <li>
-                            {/* <FaCheck /> */}
                             <i class="fa-solid fa-check"></i>
                             Lorem ipsum dolor sit dgdr
                           </li>
                           <li>
-                            {/* <FaCheck /> */}
                             <i class="fa-solid fa-check"></i>
                             Maecenas varius tortor
                           </li>

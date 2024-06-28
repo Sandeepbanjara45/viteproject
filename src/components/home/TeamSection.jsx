@@ -2,11 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const TeamSection = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  }; 
   return (
     <>
-        <>
-  {/* Team Section Start */}
-  <section className="team-section fix section-padding pt-0">
+          <section className="team-section fix section-padding pt-0">
     <div className="container">
       <div className="section-title text-center">
         <span className="wow fadeInUp">Our team members</span>
@@ -26,32 +30,11 @@ const TeamSection = () => {
             >
               <div className="team-content-2">
                 <h4>
-                  <Link to="/team"> Salman Islam </Link>
+                  <Link to="/team" onClick={scrollToTop}> Salman Islam </Link>
                 </h4>
                 <p>Developer</p>
               </div>
-              <div className="social-profile">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                  </li>
-                </ul>
-                <span className="plus-btn">
-                  <i className="fas fa-share-alt" />
-                </span>
-              </div>
+          
             </div>
           </div>
         </div>
@@ -66,32 +49,11 @@ const TeamSection = () => {
             >
               <div className="team-content-2">
                 <h4>
-                  <Link to="/team"> Janes Cooper </Link>
+                  <Link to="/team" onClick={scrollToTop}> Janes Cooper </Link>
                 </h4>
                 <p>Designer</p>
               </div>
-              <div className="social-profile">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                  </li>
-                </ul>
-                <span className="plus-btn">
-                  <i className="fas fa-share-alt" />
-                </span>
-              </div>
+            
             </div>
           </div>
         </div>
@@ -106,32 +68,11 @@ const TeamSection = () => {
             >
               <div className="team-content-2">
                 <h4>
-                  <Link to="/team"> James Bond </Link>
+                  <Link to="/team" onClick={scrollToTop}> James Bond </Link>
                 </h4>
                 <p>Creator</p>
               </div>
-              <div className="social-profile">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                  </li>
-                </ul>
-                <span className="plus-btn">
-                  <i className="fas fa-share-alt" />
-                </span>
-              </div>
+           
             </div>
           </div>
         </div>
@@ -140,7 +81,7 @@ const TeamSection = () => {
   </section>
 </>
  
-    </>
+ 
   )
 }
 

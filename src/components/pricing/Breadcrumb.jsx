@@ -2,6 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Breadcrumb = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  }; 
   return (
     <>
         <div
@@ -53,7 +59,7 @@ const Breadcrumb = () => {
         }}
       >
         <li>
-          <Link to="/"> Home</Link>
+          <Link to="/" onClick={scrollToTop} > Home</Link>
         </li>
         <li>
           <i className="fal fa-minus" />

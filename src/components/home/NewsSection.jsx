@@ -2,6 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const NewsSection = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  }; 
   return (
     <>
         <section className="news-section style-2 fix section-padding">
@@ -12,7 +18,7 @@ const NewsSection = () => {
     <div className="section-title text-center">
       <span
         className="wow fadeInUp"
-        style={{ visibility: "hidden", animationName: "none" }}
+        style={{ visibility: "visible", animationName: "none" }}
       >
         Our blog
       </span>
@@ -20,7 +26,7 @@ const NewsSection = () => {
         className="wow fadeInUp"
         data-wow-delay=".3s"
         style={{
-          visibility: "hidden",
+          visibility: "visible",
           animationDelay: "0.3s",
           animationName: "none"
         }}
@@ -33,7 +39,7 @@ const NewsSection = () => {
         className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
         data-wow-delay=".3s"
         style={{
-          visibility: "hidden",
+          visibility: "visible",
           animationDelay: "0.3s",
           animationName: "none"
         }}
@@ -53,7 +59,7 @@ const NewsSection = () => {
                 <span>Statup</span>
               </div>
               <h4>
-                <Link to="/team">
+                <Link to="/team" onClick={scrollToTop}>
                   Crafting a digital identity: the art of agency web design
                 </Link>
               </h4>
@@ -63,7 +69,7 @@ const NewsSection = () => {
                   <span>02 Comments</span>
                 </li>
                 <li>
-                  <Link to="/team">
+                  <Link to="/team" onClick={scrollToTop}>
                     <i className="fas fa-long-arrow-right" />
                   </Link>
                 </li>
@@ -98,7 +104,7 @@ const NewsSection = () => {
         className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
         data-wow-delay=".5s"
         style={{
-          visibility: "hidden",
+          visibility: "visible",
           animationDelay: "0.5s",
           animationName: "none"
         }}
@@ -118,7 +124,7 @@ const NewsSection = () => {
                 <span>Consulting</span>
               </div>
               <h4>
-                <Link to="/service-details">
+                <Link to="/contact" onClick={scrollToTop}>
                   How to manage business’s online reputation
                 </Link>
               </h4>
@@ -128,7 +134,7 @@ const NewsSection = () => {
                   <span>02 Comments</span>
                 </li>
                 <li>
-                  <Link to="/service-details">
+                  <Link to="/contact" onClick={scrollToTop}>
                     <i className="fas fa-long-arrow-right" />
                   </Link>
                 </li>
@@ -163,7 +169,7 @@ const NewsSection = () => {
         className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
         data-wow-delay=".7s"
         style={{
-          visibility: "hidden",
+          visibility: "visible",
           animationDelay: "0.7s",
           animationName: "none"
         }}
@@ -183,7 +189,7 @@ const NewsSection = () => {
                 <span>Business</span>
               </div>
               <h4>
-                <Link to="/team">
+                <Link to="/team" onClick={scrollToTop}>
                   Top crypto exchange systems influencers in china
                 </Link>
               </h4>
@@ -193,7 +199,7 @@ const NewsSection = () => {
                   <span>02 Comments</span>
                 </li>
                 <li>
-                  <Link to="/team">
+                  <Link to="/team" onClick={scrollToTop}>
                     <i className="fas fa-long-arrow-right" />
                   </Link>
                 </li>

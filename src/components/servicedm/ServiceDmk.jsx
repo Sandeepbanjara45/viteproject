@@ -2,6 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const ServiceDmk = () => {
+   const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  }; 
   return (
     <>
           <section className="Service-details fix section-padding">
@@ -16,8 +22,8 @@ const ServiceDmk = () => {
                 </div>
                 <div className="service-category">
                   <Link
-                    to="it-service"
-                    className=" teamblog text-black"
+                    to="/it-service"
+                    className=" teamblog text-black" onClick={scrollToTop}
                   >
                     IT Development &nbsp;
                     <i class="fa-solid fa-arrow-right-long"></i>
@@ -25,7 +31,7 @@ const ServiceDmk = () => {
                   </Link>
                   <Link
                     to="/Web-development"
-                    className="teamblog text-black"
+                    className="teamblog text-black" onClick={scrollToTop}
                   >
                     Web Development &nbsp;
                     <i class="fa-solid fa-arrow-right-long"></i>
@@ -33,7 +39,7 @@ const ServiceDmk = () => {
                   </Link>
                   <Link
                     to="/graphic-designing"
-                    className="teamblog text-black"
+                    className="teamblog text-black" onClick={scrollToTop}
                   >
                     Ui/Ux Designing &nbsp;
                     <i class="fa-solid fa-arrow-right-long"></i>
@@ -41,7 +47,7 @@ const ServiceDmk = () => {
                   </Link>
                   <Link
                     to="/digital-marketing"
-                    className=" active teamblog text-black"
+                    className=" active teamblog text-black" onClick={scrollToTop}
                   >
                     Digital Marketing &nbsp;
                     <i class="fa-solid fa-arrow-right-long"></i>
@@ -49,7 +55,7 @@ const ServiceDmk = () => {
                   </Link>
                   <Link
                     to="/google"
-                    className="teamblog text-black"
+                    className="teamblog text-black" onClick={scrollToTop}
                   >
                     Google Ads &nbsp;
                     <i class="fa-solid fa-arrow-right-long"></i>
@@ -57,7 +63,7 @@ const ServiceDmk = () => {
                   </Link>
                   <Link
                     to="/meta"
-                    className="teamblog text-black"
+                    className="teamblog text-black" onClick={scrollToTop}
                   >
                     Meta Ads &nbsp;
                     <i class="fa-solid fa-arrow-right-long"></i>
@@ -68,7 +74,7 @@ const ServiceDmk = () => {
               <div
                 className="service-post bg-cover mb-4"
                 style={{
-                  backgroundImage: 'url("./src/assets/img/service/service.webp")',
+                  backgroundImage: 'url("./src/assets/img/services/details.webp")',
                 }}
               >
                 <div className="content">
@@ -77,7 +83,7 @@ const ServiceDmk = () => {
                   </h3>
                   <Link
                     to="/contact"
-                    className="theme-btn bg-white"
+                    className="theme-btn bg-white" onClick={scrollToTop}
                   >
                     FIND SOLUTION
                   </Link>
@@ -89,10 +95,10 @@ const ServiceDmk = () => {
                     <i class="fa-solid fa-phone-volume"></i>
 
                   </div>
-                  <div className="content">
+                  <div className="content side_content">
                     <p>You can call anytime</p>
-                    <h5 classLinkame="mob">
-                      Free <a to="tel:+997868765">+(91) 96538 20555</a>
+                    <h5>
+                      Free <a to="tel:+997868765">+91 9653820555</a>
                     </h5>
                   </div>
                 </div>
@@ -113,7 +119,7 @@ const ServiceDmk = () => {
               <div
                 className="details-image bg-cover mt-4"
                 style={{
-                  backgroundImage: 'url("./src/assets/img/service/details.webp")',
+                  backgroundImage: 'url("./src/assets/img/services/details.webp")',
                 }}
               />
               <h3 className="details-title">Cloud Service</h3>

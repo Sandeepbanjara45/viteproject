@@ -13,9 +13,9 @@ const ContactSection = () => {
         </p>
       </div>
       <form
-        action="https://modinatheme.com/html/IdealSoft-html/contact.php"
+        action="/contact"
         id="contact-form"
-        method="POST"
+        method=""
       >
         <div className="row g-4">
           <div className="col-lg-6">

@@ -1,7 +1,14 @@
 import React from 'react'
+import './Preloader.css'
 import { Link } from 'react-router-dom'
 
 const Preloader = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  };
   return (
     <>
         <>
@@ -76,7 +83,7 @@ const Preloader = () => {
         <div className="offcanvas__content">
           <div className="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
             <div className="offcanvas__logo">
-              <Link to="/">
+              <Link to="/" onClick={scrollToTop} >
                 <img src="./src/assets/img/logo/header-logo.svg" alt="logo-img" />
               </Link>
             </div>
@@ -130,7 +137,7 @@ const Preloader = () => {
               </li>
             </ul>
             <div className="header-button mt-4">
-              <Link to="/contact" className="theme-btn text-center">
+              <Link to="/contact" className="theme-btn text-center" onClick={scrollToTop} >
                 Contact Us
               </Link>
             </div>

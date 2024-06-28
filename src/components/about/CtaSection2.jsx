@@ -2,6 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const CtaSection2 = () => {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  };
   return (
     <>
         <section
@@ -22,7 +29,7 @@ const CtaSection2 = () => {
         Make your website unforgettable <br /> join the IdealSoft community
       </h2>
       <Link
-        to="/contact"
+        to="/contact" onClick={scrollToTop}
         className="theme-btn hover-white wow fadeInUp"
         data-wow-delay=".5s"
         style={{

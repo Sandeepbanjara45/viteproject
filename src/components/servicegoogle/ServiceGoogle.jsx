@@ -2,6 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ServiceGoogle = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  };
   return (
     <>
       <section className="Service-details fix section-padding">
@@ -15,39 +21,39 @@ const ServiceGoogle = () => {
                       <h4>Catagories</h4>
                     </div>
                     <div className="service-category">
-                      <Link to="/it-service" className="teamblog text-black">
+                      <Link to="/it-service" className="teamblog text-black" onClick={scrollToTop} >
                         IT Development &nbsp;
                         <i className="fal fa-long-arrow-right" />
                       </Link>
                       <Link
                         to="/web-development"
-                        className="teamblog text-black"
+                        className="teamblog text-black" onClick={scrollToTop} 
                       >
                         Web Development &nbsp;
                         <i className="fal fa-long-arrow-right" />
                       </Link>
                       <Link
                         to="/graphic-designing"
-                        className="teamblog text-black"
+                        className="teamblog text-black" onClick={scrollToTop} 
                       >
                         Graphic Design & Video Editing &nbsp;
                         <i className="fal fa-long-arrow-right" />
                       </Link>
                       <Link
                         to="/digital-marketing"
-                        className="teamblog text-black"
+                        className="teamblog text-black" onClick={scrollToTop} 
                       >
                         Digital Marketing &nbsp;
                         <i className="fal fa-long-arrow-right" />
                       </Link>
                       <Link
                         to="/google"
-                        className=" active teamblog text-black"
+                        className=" active teamblog text-black" onClick={scrollToTop} 
                       >
                         Google Ads &nbsp;
                         <i className="fal fa-long-arrow-right" />
                       </Link>
-                      <Link to="/meta" className="teamblog text-black">
+                      <Link to="/meta" className="teamblog text-black" onClick={scrollToTop}  >
                         Meta Ads &nbsp;
                         <i className="fal fa-long-arrow-right" />
                       </Link>
@@ -57,31 +63,32 @@ const ServiceGoogle = () => {
                     className="service-post bg-cover mb-4"
                     style={{
                       backgroundImage:
-                        'url("./src/assets/img/service/service.webp")',
+                       'url("./src/assets/img/services/details.webp")',
                     }}
                   >
                     <div className="content">
                       <h3>
                         Need Any Types <br /> of Service <br /> from us
                       </h3>
-                      <Link to="/contact" className="theme-btn bg-white">
+                      <Link to="/contact" className="theme-btn bg-white" onClick={scrollToTop}  >
                         FIND SOLUTION
                       </Link>
                     </div>
                   </div>
                   <div className="service-sidebar-widget mb-4">
-                    <div className="service-info">
-                      <div className="icon">
-                        <i className="flaticon-telephone" />
-                      </div>
-                      <div className="content">
-                        <p>You can call anytime</p>
-                        <h5 className="mob">
-                          Free <Link to="tel:+997868765">+99 (786) 8765</Link>
-                        </h5>
-                      </div>
+                  <div className="service-info">
+                    <div className="icon">
+                    <i class="fa-solid fa-phone-volume"></i>
+
+                    </div>
+                    <div className="content side_content">
+                      <p>You can call anytime</p>
+                      <h5>
+                        Free <Link to="tel:+997868765">+91 96538 20555</Link>
+                      </h5>
                     </div>
                   </div>
+                </div>
                 </div>
               </div>
               <div className="col-12 col-lg-8 order-1 order-md-2">
@@ -99,7 +106,7 @@ const ServiceGoogle = () => {
                     className="details-image bg-cover mt-4"
                     style={{
                       backgroundImage:
-                        'url("./src/assets/img/service/details.webp")',
+                        'url("./src/assets/img/services/details.webp")',
                     }}
                   />
                   <h3 className="details-title">Cloud Service</h3>

@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const CtaSection = () => {
+  
+ 
   return (
     <>
         <section
@@ -15,7 +17,7 @@ const CtaSection = () => {
           className="wow fadeInUp"
           data-wow-delay=".3s"
           style={{
-            visibility: "hidden",
+            visibility: "visible",
             animationDelay: "0.3s",
             animationName: "none"
           }}
@@ -27,7 +29,7 @@ const CtaSection = () => {
           className="video-icon video-popup wow fadeInUp"
           data-wow-delay=".5s"
           style={{
-            visibility: "hidden",
+            visibility: "visible",
             animationDelay: "0.5s",
             animationName: "none"
           }}

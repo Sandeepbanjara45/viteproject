@@ -1,6 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Blogwrapper = () => {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  };
+
   return (
     <>
         <section className="blog-wrapper news-wrapper section-padding border-bottom">
@@ -126,9 +135,9 @@ const Blogwrapper = () => {
               <div className="col-lg-8 col-12">
                 <h4>Releted Tags</h4>
                 <div className="tagcloud">
-                  <Link to="/team">Development</Link>
-                  <Link to="/team">Digital</Link>
-                  <Link to="/team">Tech</Link>
+                  <Link to="/team" onClick={scrollToTop}>Development</Link>
+                  <Link to="/team" onClick={scrollToTop}>Digital</Link>
+                  <Link to="/team" onClick={scrollToTop}>Tech</Link>
                 </div>
               </div>
               <div className="col-lg-4 col-12 mt-3 mt-lg-0 text-lg-end">
@@ -289,7 +298,7 @@ const Blogwrapper = () => {
                   />
                   <div className="post-content">
                     <h5>
-                      <Link to="/team">
+                      <Link to="/team" onClick={scrollToTop} >
                         Keep your business safe and ensure high
                       </Link>
                     </h5>
@@ -308,7 +317,7 @@ const Blogwrapper = () => {
                   />
                   <div className="post-content">
                     <h5>
-                      <Link to="/team">
+                      <Link to="/team" onClick={scrollToTop}>
                         We’ve been a strategy thought leader for nearly
                       </Link>
                     </h5>
@@ -327,7 +336,7 @@ const Blogwrapper = () => {
                   />
                   <div className="post-content">
                     <h5>
-                      <Link to="/team">
+                      <Link to="/team" onClick={scrollToTop}>
                         This week’s top stories and about It
                       </Link>
                     </h5>
@@ -346,32 +355,32 @@ const Blogwrapper = () => {
               <div className="widget_categories">
               <ul>
                   <li>
-                    <Link to="/it-service">
+                    <Link to="/it-service" onClick={scrollToTop}>
                       IT Department <span>23</span>
                     </Link>
                   </li>
                   <li>
-                    <Link to="/web-development">
+                    <Link to="/web-development" onClick={scrollToTop} >
                       Web Development <span>24</span>
                     </Link>
                   </li>
                   <li>
-                    <Link to="/graphic-designing">
+                    <Link to="/graphic-designing" onClick={scrollToTop} >
                       Ui/Ux Designing <span>11</span>
                     </Link>
                   </li>
                   <li>
-                    <Link to="/digital-marketing">
+                    <Link to="/digital-marketing" onClick={scrollToTop} >
                       Digital Marketing <span>05</span>
                     </Link>
                   </li>
                   <li>
-                    <Link to="/android-development">
+                    <Link to="/android-development" onClick={scrollToTop} >
                       Android Development <span>06</span>
                     </Link>
                   </li>
                   <li>
-                    <Link to="/seo">
+                    <Link to="/seo" onClick={scrollToTop} >
                       Seo <span>10</span>
                     </Link>
                   </li>
@@ -405,12 +414,12 @@ const Blogwrapper = () => {
                 <h3>Popular Tags</h3>
               </div>
               <div className="tagcloud">
-              <Link to="/it-service">IT Technology</Link>
-                <Link to="/it-service">Software</Link>
-                <Link to="/graphic-designing">Design</Link>
-                <Link to="/service">Service</Link>
-                <Link to="/web-development">Development</Link>
-                <Link to="/digital-marketing">Digital</Link>
+              <Link to="/it-service" onClick={scrollToTop} >IT Technology</Link>
+                <Link to="/it-service" onClick={scrollToTop} >Software</Link>
+                <Link to="/graphic-designing" onClick={scrollToTop} >Design</Link>
+                <Link to="/service" onClick={scrollToTop} >Service</Link>
+                <Link to="/web-development" onClick={scrollToTop} >Development</Link>
+                <Link to="/digital-marketing" onClick={scrollToTop} >Digital</Link>
               </div>
             </div>
           </div>

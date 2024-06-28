@@ -2,424 +2,320 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Blogwrapper = () => {
+  
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  };
+  
   return (
     <>
-        <section className="blog-wrapper news-wrapper section-padding border-bottom">
+     <section className="news-section fix section-padding">
   <div className="container">
-    <div className="news-area">
-      <div className="row">
-        <div className="col-12 col-lg-8">
-          <div className="blog-post-details border-wrap mt-0">
-            <div className="single-blog-post post-details mt-0">
-              <div className="post-content pt-0">
-                <h2 className="mt-0">
-                  Mind-Blowing Reasons Why Agency Is Using This Technique For
-                  Exposure.
-                </h2>
-                <div className="post-meta mt-3">
-                  <span>
-                    <i className="fal fa-user" />
-                    Shikhon .Ha
-                  </span>
-                  <span>
-                    <i className="fal fa-comments" />
-                    15 Comments
-                  </span>
-                  <span>
-                    <i className="fal fa-calendar-alt" />
-                    4th February 2024
-                  </span>
-                </div>
-                <p>
-                  With worldwide annual spend on digital advertising surpassing
-                  $325 billion, it’s no surprise that different approaches to
-                  online marketing are becoming available. One of these new
-                  approaches is performance marketing or digital performance
-                  marketing. Keep reading to learn all about performance
-                  marketing, from how it works to how it compares to digital
-                  marketing. Plus, get insight into the benefits and risks of
-                  performance marketing and how it can affect your company’s
-                  long-term success and profitability.
-                </p>
-                <p>
-                  With worldwide annual spend on digital advertising surpassing
-                  $325 billion, it’s no surprise that different approaches to
-                  online marketing are becoming available. One of these new
-                  approaches is performance marketing or digital performance
-                  marketing. Keep reading to learn all about performance
-                  marketing, from how it works to how it compares to digital
-                  marketing. Plus, get insight into the benefits and risks of
-                  performance marketing and how it can affect your company’s
-                  long-term success and profitability.
-                </p>
-                <img
-                  src="./src/assets/img/news/post-4.webp"
-                  alt="blog__img"
-                  className="single-post-image"
-                />
-                <h2>
-                  You Should Experience Agency At Least Once In Your Lifetime
-                  And Here's Why.
-                </h2>
-                <p>
-                  Performance marketing is an approach to digital marketing or
-                  advertising where businesses only pay when a specific result
-                  occurs. This result could be a new lead, sale, or other
-                  outcome agreed upon by the advertiser and business.
-                  Performance marketing involves channels such as affiliate
-                  marketing, online advertising.
-                </p>
-                <blockquote>
-                  Diam luctus nostra dapibus varius et semper semper rutrum ad
-                  risus felis eros. Cursus libero viverra tempus netus diam
-                  vestibulum
-                </blockquote>
-                <p>
-                  With worldwide annual spend on digital advertising surpassing
-                  $325 billion, it’s no surprise that different approaches to
-                  online marketing are becoming available. One of these new
-                  approaches is performance marketing or digital performance
-                  marketing. Keep reading to learn all about performance
-                  marketing
-                </p>
-                <ul className="checked-list mb-4">
-                  <li>Cooking is love made visible</li>
-                  <li>We’re an open book</li>
-                  <li>100% goes to the field</li>
-                  <li>Received the highest grades</li>
-                </ul>
-                <h4>Easy &amp; Most Powerful Server Platform.</h4>
-                <p>
-                  With worldwide annual spend on digital advertising surpassing
-                  $325 billion, it’s no surprise that different approaches to
-                  online marketing are becoming available. One of these new
-                  approaches is performance marketing or digital performance
-                  marketing. Keep reading to learn all about performance
-                  marketing, from how it works to how it compares to digital
-                  marketing. Plus, get insight into the benefits and risks of
-                  performance marketing and how it can affect your company’s
-                  long-term success and profitability.
-                </p>
-                <img
-                  className="alignleft"
-                  src="./src/assets/img/news/post-5.webp"
-                  alt="blog__img"
-                />
-                <p>
-                  With worldwide annual spend on digital advertising surpassing
-                  $325 billion, it’s no surprise that different approaches to
-                  online marketing are becoming available. One of these new
-                  approaches is performance marketing or digital performance
-                  marketing. Keep reading to learn all about performance
-                  marketing
-                </p>
-                <p>
-                  With worldwide annual spend on digital advertising surpassing
-                  $325 billion, it’s no surprise that different approaches to
-                  online marketing are becoming available. One of these new
-                  approaches is performance marketing or digital performance
-                  marketing. Keep reading to learn all about performance
-                  marketing
-                </p>
-              </div>
+    <div className="row">
+      <div
+        className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+        data-wow-delay=".3s"
+        style={{
+          visibility: "visible",
+          animationDelay: "0.3s",
+          animationName: "fadeInUp"
+        }}
+      >
+        <div className="single-news-items-2">
+          <div
+            className="news-image bg-cover"
+            style={{ backgroundImage: 'url("./src/assets/img/news/04.webp")' }}
+          >
+            <div className="post-date">
+              <h5>20</h5>
+              <span>Feb</span>
             </div>
-            <div className="row tag-share-wrap">
-              <div className="col-lg-8 col-12">
-                <h4>Releted Tags</h4>
-                <div className="tagcloud">
-                  <Link to="/web-development">Development</Link>
-                  <Link to="/digital-marketing">Digital</Link>
-                  <Link to="/android-development">Tech</Link>
-                </div>
+            <div className="news-content">
+              <div className="icon">
+                <i className="fal fa-tag" />
+                <span>Statup</span>
               </div>
-              <div className="col-lg-4 col-12 mt-3 mt-lg-0 text-lg-end">
-                <h4>Social Share</h4>
-                <div className="social-share">
-                  <a href="#">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-instagram" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            {/* comments section wrap start */}
-            <div className="comments-section-wrap pt-40">
-              <div className="comments-heading">
-                <h3>03 Comments</h3>
-              </div>
-              <ul className="comments-item-list">
-                <li className="single-comment-item">
-                  <div className="author-img">
-                    <img src="./src/assets/img/news/author_img2.webp" alt="img" />
-                  </div>
-                  <div className="author-info-comment">
-                    <div className="info">
-                      <h5>
-                        <a href="#">Rosalina Kelian</a>
-                      </h5>
-                      <span>19th May 2024</span>
-                      <a href="#" className="theme-btn minimal-btn">
-                        <i className="fal fa-reply" />
-                        Reply
-                      </a>
-                    </div>
-                    <div className="comment-text">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna. Ut enim ad minim veniam, quis nostrud
-                        laboris nisi ut aliquip ex ea commodo consequat.
-                      </p>
-                    </div>
-                  </div>
+              <h4>
+                <Link to="/team"  onClick={scrollToTop}>
+                  Crafting a digital identity: the art of agency web design
+                </Link>
+              </h4>
+              <ul className="post-list">
+                <li>
+                  <i className="far fa-comment-alt" />
+                  <span>02 Comments</span>
                 </li>
-                <li className="single-comment-item">
-                  <div className="author-img">
-                    <img src="./src/assets/img/news/author_img3.webp" alt="img" />
-                  </div>
-                  <div className="author-info-comment">
-                    <div className="info">
-                      <h5>
-                        <a href="#">Arista Williamson</a>
-                      </h5>
-                      <span>21th Feb 2024</span>
-                      <a href="#" className="theme-btn minimal-btn">
-                        <i className="fal fa-reply" />
-                        Reply
-                      </a>
-                    </div>
-                    <div className="comment-text">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco nisi ut aliquip ex ea
-                        commodo consequat.
-                      </p>
-                    </div>
-                  </div>
-                  <ul className="replay-comment">
-                    <li className="single-comment-item">
-                      <div className="author-img">
-                        <img src="./src/assets/img/news/author_img4.webp" alt="img" />
-                      </div>
-                      <div className="author-info-comment">
-                        <div className="info">
-                          <h5>
-                            <a href="#">Salman Ahmed</a>
-                          </h5>
-                          <span>29th Jan 2021</span>
-                          <a href="#" className="theme-btn minimal-btn">
-                            <i className="fal fa-reply" />
-                            Reply
-                          </a>
-                        </div>
-                        <div className="comment-text">
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam..
-                          </p>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
+                <li>
+                  <Link to="/team" onClick={scrollToTop}>
+                    <i className="fas fa-long-arrow-right" />
+                  </Link>
                 </li>
               </ul>
             </div>
-            <div className="comment-form-wrap mt-40">
-              <h3>Post Comment</h3>
-              <form action="#" className="comment-form">
-                <div className="single-form-input">
-                  <textarea
-                    placeholder="Type your comments...."
-                    defaultValue={""}
-                  />
-                </div>
-                <div className="single-form-input">
-                  <input type="text" placeholder="Type your name...." />
-                </div>
-                <div className="single-form-input">
-                  <input type="email" placeholder="Type your email...." />
-                </div>
-                <div className="single-form-input">
-                  <input type="text" placeholder="Type your website...." />
-                </div>
-                <button className="theme-btn center" type="submit">
-                  <i className="fal fa-comments" />
-                  Post Comment
-                </button>
-              </form>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+        data-wow-delay=".5s"
+        style={{
+          visibility: "visible",
+          animationDelay: "0.5s",
+          animationName: "fadeInUp"
+        }}
+      >
+        <div className="single-news-items-2">
+          <div
+            className="news-image bg-cover"
+            style={{ backgroundImage: 'url("./src/assets/img/news/05.webp")' }}
+          >
+            <div className="post-date">
+              <h5>22</h5>
+              <span>April</span>
+            </div>
+            <div className="news-content">
+              <div className="icon">
+                <i className="fal fa-tag" />
+                <span>Consulting</span>
+              </div>
+              <h4>
+                <Link to="/team" onClick={scrollToTop}>
+                  How to manage business’s online reputation
+                </Link>
+              </h4>
+              <ul className="post-list">
+                <li>
+                  <i className="far fa-comment-alt" />
+                  <span>02 Comments</span>
+                </li>
+                <li>
+                  <Link to="/team" onClick={scrollToTop}>
+                    <i className="fas fa-long-arrow-right" />
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <div className="col-12 col-lg-4">
-          <div className="main-sidebar">
-            <div className="single-sidebar-widget">
-              <div className="wid-title">
-                <h3>Search</h3>
-              </div>
-              <div className="search_widget">
-                <form action="#">
-                  <input type="text" placeholder="Keywords here...." />
-                  <button type="submit">
-                    <i className="fal fa-search" />
-                  </button>
-                </form>
-              </div>
+      </div>
+      <div
+        className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+        data-wow-delay=".7s"
+        style={{
+          visibility: "visible",
+          animationDelay: "0.7s",
+          animationName: "fadeInUp"
+        }}
+      >
+        <div className="single-news-items-2">
+          <div
+            className="news-image bg-cover"
+            style={{ backgroundImage: 'url("./src/assets/img/news/06.webp")' }}
+          >
+            <div className="post-date">
+              <h5>20</h5>
+              <span>Feb</span>
             </div>
-            <div className="single-sidebar-widget">
-              <div className="wid-title">
-                <h3>Popular Feeds</h3>
+            <div className="news-content">
+              <div className="icon">
+                <i className="fal fa-tag" />
+                <span>Business</span>
               </div>
-              <div className="popular-posts">
-                <div className="single-post-item">
-                  <div
-                    className="thumb bg-cover"
-                    style={{
-                      backgroundImage: 'url("./src/assets/img/news/pp1.webp")'
-                    }}
-                  />
-                  <div className="post-content">
-                    <h5>
-                      <Link to="/team">
-                        Keep your business safe and ensure high
-                      </Link>
-                    </h5>
-                    <div className="post-date">
-                      <i className="far fa-calendar-alt" />
-                      24th March 2024
-                    </div>
-                  </div>
-                </div>
-                <div className="single-post-item">
-                  <div
-                    className="thumb bg-cover"
-                    style={{
-                      backgroundImage: 'url("./src/assets/img/news/pp2.webp")'
-                    }}
-                  />
-                  <div className="post-content">
-                    <h5>
-                      <Link to="/team">
-                        We’ve been a strategy thought leader for nearly
-                      </Link>
-                    </h5>
-                    <div className="post-date">
-                      <i className="far fa-calendar-alt" />
-                      25th March 2024
-                    </div>
-                  </div>
-                </div>
-                <div className="single-post-item">
-                  <div
-                    className="thumb bg-cover"
-                    style={{
-                      backgroundImage: 'url("./src/assets/img/news/pp3.webp")'
-                    }}
-                  />
-                  <div className="post-content">
-                    <h5>
-                      <Link to="/team">
-                        This week’s top stories and about It
-                      </Link>
-                    </h5>
-                    <div className="post-date">
-                      <i className="far fa-calendar-alt" />
-                      26th March 2024
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <h4>
+                <Link to="/team" onClick={scrollToTop}>
+                  Top crypto exchange systems influencers in china
+                </Link>
+              </h4>
+              <ul className="post-list">
+                <li>
+                  <i className="far fa-comment-alt" />
+                  <span>02 Comments</span>
+                </li>
+                <li>
+                  <Link to="/team" onClick={scrollToTop}>
+                    <i className="fas fa-long-arrow-right" />
+                  </Link>
+                </li>
+              </ul>
             </div>
-            <div className="single-sidebar-widget">
-              <div className="wid-title">
-                <h3>Categories</h3>
-              </div>
-              <div className="widget_categories">
-                <ul>
-                  <li>
-                    <Link to="/it-service">
-                      IT Department <span>23</span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/web-development">
-                      Web Development <span>24</span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/graphic-designing">
-                      Ui/Ux Designing <span>11</span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/digital-marketing">
-                      Digital Marketing <span>05</span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/android-development">
-                      Android Development <span>06</span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/seo">
-                      Seo <span>10</span>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+        data-wow-delay=".3s"
+        style={{
+          visibility: "visible",
+          animationDelay: "0.3s",
+          animationName: "fadeInUp"
+        }}
+      >
+        <div className="single-news-items-2">
+          <div
+            className="news-image bg-cover"
+            style={{ backgroundImage: 'url("./src/assets/img/news/10.webp")' }}
+          >
+            <div className="post-date">
+              <h5>20</h5>
+              <span>Feb</span>
             </div>
-            <div className="single-sidebar-widget">
-              <div className="wid-title">
-                <h3>Never Miss News</h3>
+            <div className="news-content">
+              <div className="icon">
+                <i className="fal fa-tag" />
+                <span>Statup</span>
               </div>
-              <div className="social-link">
-                <a href="#">
-                  <i className="fab fa-facebook-f" />
-                </a>
-                <a href="#">
-                  <i className="fab fa-twitter" />
-                </a>
-                <a href="#">
-                  <i className="fab fa-instagram" />
-                </a>
-                <a href="#">
-                  <i className="fab fa-linkedin-in" />
-                </a>
-                <a href="#">
-                  <i className="fab fa-youtube" />
-                </a>
-              </div>
+              <h4>
+                <Link to="/team" onClick={scrollToTop}>
+                  Crafting a digital identity: the art of agency web design
+                </Link>
+              </h4>
+              <ul className="post-list">
+                <li>
+                  <i className="far fa-comment-alt" />
+                  <span>02 Comments</span>
+                </li>
+                <li>
+                  <Link to="/team" onClick={scrollToTop}>
+                    <i className="fas fa-long-arrow-right" />
+                  </Link>
+                </li>
+              </ul>
             </div>
-            <div className="single-sidebar-widget">
-              <div className="wid-title">
-                <h3>Popular Tags</h3>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+        data-wow-delay=".5s"
+        style={{
+          visibility: "visible",
+          animationDelay: "0.5s",
+          animationName: "fadeInUp"
+        }}
+      >
+        <div className="single-news-items-2">
+          <div
+            className="news-image bg-cover"
+            style={{ backgroundImage: 'url("./src/assets/img/news/12.webp")' }}
+          >
+            <div className="post-date">
+              <h5>22</h5>
+              <span>April</span>
+            </div>
+            <div className="news-content">
+              <div className="icon">
+                <i className="fal fa-tag" />
+                <span>Consulting</span>
               </div>
-              <div className="tagcloud">
-                <Link to="/it-service">IT Technology</Link>
-                <Link to="/it-service">Software</Link>
-                <Link to="/graphic-designing">Design</Link>
-                <Link to="/service">Service</Link>
-                <Link to="/web-development">Development</Link>
-                <Link to="/digital-marketing">Digital</Link>
+              <h4>
+                <Link to="/team" onClick={scrollToTop}>
+                  How to manage business’s online reputation
+                </Link>
+              </h4>
+              <ul className="post-list">
+                <li>
+                  <i className="far fa-comment-alt" />
+                  <span>02 Comments</span>
+                </li>
+                <li>
+                  <Link to="/team" onClick={scrollToTop}>
+                    <i className="fas fa-long-arrow-right" />
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+        data-wow-delay=".7s"
+        style={{
+          visibility: "visible",
+          animationDelay: "0.7s",
+          animationName: "fadeInUp"
+        }}
+      >
+        <div className="single-news-items-2">
+          <div
+            className="news-image bg-cover"
+            style={{ backgroundImage: 'url("./src/assets/img/news/13.webp")' }}
+          >
+            <div className="post-date">
+              <h5>20</h5>
+              <span>Feb</span>
+            </div>
+            <div className="news-content">
+              <div className="icon">
+                <i className="fal fa-tag" />
+                <span>Business</span>
               </div>
+              <h4>
+                <Link to="/team" onClick={scrollToTop}>
+                  Top crypto exchange systems influencers in china
+                </Link>
+              </h4>
+              <ul className="post-list">
+                <li>
+                  <i className="far fa-comment-alt" />
+                  <span>02 Comments</span>
+                </li>
+                <li>
+                  <Link to="/team" onClick={scrollToTop}>
+                    <i className="fas fa-long-arrow-right" />
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div className="page-nav-wrap mt-5 text-center">
+      <ul>
+        <li>
+          <a className="page-numbers" href="#">
+            <i className="fal fa-long-arrow-left" />
+          </a>
+        </li>
+        <li>
+          <a className="page-numbers" href="#">
+            01
+          </a>
+        </li>
+        <li>
+          <a className="page-numbers" href="#">
+            02
+          </a>
+        </li>
+        <li>
+          <a className="page-numbers" href="#">
+            ..
+          </a>
+        </li>
+        <li>
+          <a className="page-numbers" href="#">
+            10
+          </a>
+        </li>
+        <li>
+          <a className="page-numbers" href="#">
+            11
+          </a>
+        </li>
+        <li>
+          <a className="page-numbers" href="#">
+            <i className="fal fa-long-arrow-right" />
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
+
 
     </>
   )

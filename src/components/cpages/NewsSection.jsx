@@ -2,6 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const NewsSection = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  }; 
   return (
     <>
         <section className="news-section fix section-padding">
@@ -31,7 +37,7 @@ const NewsSection = () => {
                 <span>Statup</span>
               </div>
               <h4>
-                <Link to="/team">
+                <Link to="/team" onClick={scrollToTop}>
                   Crafting a digital identity: the art of agency web design
                 </Link>
               </h4>
@@ -41,7 +47,7 @@ const NewsSection = () => {
                   <span>02 Comments</span>
                 </li>
                 <li>
-                  <Link to="/team">
+                  <Link to="/team" onClick={scrollToTop}>
                     <i className="fas fa-long-arrow-right" />
                   </Link>
                 </li>
@@ -74,7 +80,7 @@ const NewsSection = () => {
                 <span>Consulting</span>
               </div>
               <h4>
-                <Link to="/team">
+                <Link to="/team" onClick={scrollToTop}>
                   How to manage business’s online reputation
                 </Link>
               </h4>
@@ -84,7 +90,7 @@ const NewsSection = () => {
                   <span>02 Comments</span>
                 </li>
                 <li>
-                  <Link to="/team">
+                  <Link to="/team" onClick={scrollToTop}>
                     <i className="fas fa-long-arrow-right" />
                   </Link>
                 </li>
@@ -117,7 +123,7 @@ const NewsSection = () => {
                 <span>Business</span>
               </div>
               <h4>
-                <Link to="/team">
+                <Link to="/team" onClick={scrollToTop}>
                   Top crypto exchange systems influencers in china
                 </Link>
               </h4>
@@ -127,7 +133,7 @@ const NewsSection = () => {
                   <span>02 Comments</span>
                 </li>
                 <li>
-                  <Link to="/team">
+                  <Link to="/team" onClick={scrollToTop}>
                     <i className="fas fa-long-arrow-right" />
                   </Link>
                 </li>
@@ -160,7 +166,7 @@ const NewsSection = () => {
                 <span>Statup</span>
               </div>
               <h4>
-                <Link to="/team">
+                <Link to="/team" onClick={scrollToTop}>
                   Crafting a digital identity: the art of agency web design
                 </Link>
               </h4>
@@ -170,7 +176,7 @@ const NewsSection = () => {
                   <span>02 Comments</span>
                 </li>
                 <li>
-                  <Link to="/team">
+                  <Link to="/team" onClick={scrollToTop}>
                     <i className="fas fa-long-arrow-right" />
                   </Link>
                 </li>
@@ -203,7 +209,7 @@ const NewsSection = () => {
                 <span>Consulting</span>
               </div>
               <h4>
-                <Link to="/team">
+                <Link to="/team" onClick={scrollToTop}>
                   How to manage business’s online reputation
                 </Link>
               </h4>
@@ -213,7 +219,7 @@ const NewsSection = () => {
                   <span>02 Comments</span>
                 </li>
                 <li>
-                  <Link to="/team">
+                  <Link to="/team" onClick={scrollToTop}>
                     <i className="fas fa-long-arrow-right" />
                   </Link>
                 </li>
@@ -246,7 +252,7 @@ const NewsSection = () => {
                 <span>Business</span>
               </div>
               <h4>
-                <Link to="/team">
+                <Link to="/team" onClick={scrollToTop}>
                   Top crypto exchange systems influencers in china
                 </Link>
               </h4>
@@ -256,7 +262,7 @@ const NewsSection = () => {
                   <span>02 Comments</span>
                 </li>
                 <li>
-                  <Link to="/team">
+                  <Link to="/team" onClick={scrollToTop}>
                     <i className="fas fa-long-arrow-right" />
                   </Link>
                 </li>

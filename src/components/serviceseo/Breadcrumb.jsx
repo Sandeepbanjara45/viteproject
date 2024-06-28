@@ -2,6 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Breadcrumb = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  };
   return (
     <>
         <div className="breadcrumb-wrapper bg-cover section-padding" style={{ backgroundImage: "url('./src/assets/img/breadcrumb.webp')" }}>
@@ -16,7 +22,7 @@ const Breadcrumb = () => {
           <h1 className="wow fadeInUp" data-wow-delay=".3s" style={{ visibility: 'visible', animationDelay: '.3s', animationName: 'fadeInUp' }}>Seo </h1>
           <ul className="breadcrumb-items wow fadeInUp" data-wow-delay=".5s" style={{ visibility: 'visible', animationDelay: '.5s', animationName: 'fadeInUp' }}>
             <li>
-              <Link to="/"> Home</Link>
+              <Link to="/" onClick={scrollToTop} > Home</Link>
             </li>
             <li>
               <i className="fal fa-minus"></i>

@@ -2,6 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const ServiceProvideSection = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  }; 
   return (
     <>
         <section className="service-provide section-padding">
@@ -44,7 +50,7 @@ const ServiceProvideSection = () => {
           </div>
           <div className="content">
             <h5>
-              <Link to="/android-development">
+              <Link to="/android-development"  onClick={scrollToTop} >
                 Mobile <br />
                 Application
               </Link>
@@ -54,7 +60,7 @@ const ServiceProvideSection = () => {
               ut loreum ipsum dsu
             </p>
             <div className="arrow-icon">
-              <Link to="/service">
+              <Link to="/android-development" onClick={scrollToTop} >
                 <i className="flaticon-next" />
               </Link>
             </div>
@@ -70,13 +76,13 @@ const ServiceProvideSection = () => {
           animationName: "fadeInUp"
         }}
       >
-        <div className="service-provide-items text-center active">
+        <div className="service-provide-items text-center">
           <div className="icon">
             <i className="flaticon-advertisig-agency" />
           </div>
           <div className="content">
             <h5>
-              <Link to="/digital-marketing">
+              <Link to="/digital-marketing" onClick={scrollToTop} >
                 Digital <br />
                 Marketing
               </Link>
@@ -86,7 +92,7 @@ const ServiceProvideSection = () => {
               ut loreum ipsum dsu
             </p>
             <div className="arrow-icon">
-              <Link to="/service">
+              <Link to="/digital-marketing" onClick={scrollToTop} >
                 <i className="flaticon-next" />
               </Link>
             </div>
@@ -108,7 +114,7 @@ const ServiceProvideSection = () => {
           </div>
           <div className="content">
             <h5>
-              <Link to="/graphic-designing">
+              <Link to="/graphic-designing" onClick={scrollToTop} >
                 Graphics <br />
                 Designing
               </Link>
@@ -118,7 +124,7 @@ const ServiceProvideSection = () => {
               ut loreum ipsum dsu
             </p>
             <div className="arrow-icon">
-              <Link to="/service">
+              <Link to="/graphic-designing" onClick={scrollToTop} >
                 <i className="flaticon-next" />
               </Link>
             </div>
@@ -140,7 +146,7 @@ const ServiceProvideSection = () => {
           </div>
           <div className="content">
             <h5>
-              <Link to="/web-development">
+              <Link to="/web-development" onClick={scrollToTop} >
                 Website <br />
                 Development
               </Link>
@@ -150,7 +156,7 @@ const ServiceProvideSection = () => {
               ut loreum ipsum dsu
             </p>
             <div className="arrow-icon">
-              <Link to="/service">
+              <Link to="/web-development" onClick={scrollToTop} >
                 <i className="flaticon-next" />
               </Link>
             </div>

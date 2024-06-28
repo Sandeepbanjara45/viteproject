@@ -3,6 +3,12 @@ import { Link } from 'react-router-dom'
  
 
 const HeroSection = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  }; 
   return (
     <>
         <>
@@ -66,7 +72,7 @@ const HeroSection = () => {
                   </h1>
                   <div className="hero-button">
                     <Link
-                      to="/contact"
+                      to="/contact" onClick={scrollToTop}
                       data-animation="fadeInUp"
                       data-delay="1.7s"
                       className="theme-btn hover-white"
@@ -153,7 +159,7 @@ const HeroSection = () => {
                   </h1>
                   <div className="hero-button">
                     <Link
-                      to="/"
+                      to="/" onClick={scrollToTop}
                       data-animation="fadeInUp"
                       data-delay="1.7s"
                       className="theme-btn hover-white"
@@ -240,7 +246,7 @@ const HeroSection = () => {
                   </h1>
                   <div className="hero-button">
                     <Link
-                      to="/"
+                      to="/" onClick={scrollToTop}
                       data-animation="fadeInUp"
                       data-delay="1.7s"
                       className="theme-btn hover-white"

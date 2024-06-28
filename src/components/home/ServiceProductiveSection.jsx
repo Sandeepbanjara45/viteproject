@@ -2,6 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const ServiceProductiveSection = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  }; 
   return (
     <>
         <section className="service-productive fix section-padding">
@@ -17,7 +23,7 @@ const ServiceProductiveSection = () => {
       <div className="row align-items-center">
         <div className="col-xl-6 col-lg-6">
           <div className="productive-image-2">
-            <img src="./src/assets/img/service/04.webp" alt="img" />
+            <img src="./src/assets/img/services/04.webp" alt="img" />
           </div>
         </div>
         <div className="col-xl-6 col-lg-6 mt-5 mt-xl-0">
@@ -26,7 +32,7 @@ const ServiceProductiveSection = () => {
               className="section-title wow fadeInUp"
               data-wow-delay=".3s"
               style={{
-                visibility: "hidden",
+                visibility: "visible",
                 animationDelay: "0.3s",
                 animationName: "none"
               }}
@@ -39,7 +45,7 @@ const ServiceProductiveSection = () => {
               className="mt-4 mt-md-0 wow fadeInUp"
               data-wow-delay=".5s"
               style={{
-                visibility: "hidden",
+                visibility: "visible",
                 animationDelay: "0.5s",
                 animationName: "none"
               }}
@@ -53,7 +59,7 @@ const ServiceProductiveSection = () => {
                 className="icon-item d-flex align-items-center wow fadeInUp"
                 data-wow-delay=".3s"
                 style={{
-                  visibility: "hidden",
+                  visibility: "visible",
                   animationDelay: "0.3s",
                   animationName: "none"
                 }}
@@ -68,10 +74,10 @@ const ServiceProductiveSection = () => {
                 </div>
               </div>
               <div
-                className="icon-item d-flex align-items-center active wow fadeInUp"
+                className="icon-item d-flex align-items-center wow fadeInUp"
                 data-wow-delay=".5s"
                 style={{
-                  visibility: "hidden",
+                  visibility: "visible",
                   animationDelay: "0.5s",
                   animationName: "none"
                 }}
@@ -90,7 +96,7 @@ const ServiceProductiveSection = () => {
               className="wow fadeInUp"
               data-wow-delay=".7s"
               style={{
-                visibility: "hidden",
+                visibility: "visible",
                 animationDelay: "0.7s",
                 animationName: "none"
               }}
@@ -101,18 +107,18 @@ const ServiceProductiveSection = () => {
               className="author-items wow fadeInUp"
               data-wow-delay=".9s"
               style={{
-                visibility: "hidden",
+                visibility: "visible",
                 animationDelay: "0.9s",
                 animationName: "none"
               }}
             >
               <div className="about-button">
-                <Link to="/about" className="theme-btn">
+                <Link to="/about" onClick={scrollToTop} className="theme-btn">
                   {" "}
                   Discover More{" "}
                 </Link>
               </div>
-              <img src="./src/assets/img/about/signature-2.webp" alt="signature" />
+              {/* <img src="./src/assets/img/about/signature-2.webp" alt="signature" /> */}
             </div>
           </div>
         </div>

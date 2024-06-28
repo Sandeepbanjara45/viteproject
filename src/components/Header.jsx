@@ -2,10 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Header = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+  };
   return (
     <>
       <header>
-  <div className="header-top">
+  <div className="header-top ">
     <div className="container-fluid">
       <div className="header-top-wrapper">
         <ul>
@@ -39,12 +45,12 @@ const Header = () => {
     </div>
   </div>
   <div id="header-sticky" className="header-2">
-    <div className="container-fluid">
+    <div className="container-fluid ">
       <div className="mega-menu-wrapper">
-        <div className="header-main">
+        <div className="header-main ">
           <div className="header-left">
             <div className="logo">
-              <Link to="/" className="header-logo">
+              <Link to="/" className="header-logo" onClick={scrollToTop} >
                 <img src="./src/assets/img/logo/header-logo.svg" alt="logo-img" />
               </Link>
             </div>
@@ -53,20 +59,20 @@ const Header = () => {
                 <nav id="mobile-menu">
                   <ul>
                     <li className="has-dropdown active menu-thumb">
-                      <Link to="/"> Home </Link>
+                      <Link to="/" onClick={scrollToTop} > Home </Link>
                     </li>
                     <li>
-                      <Link to="/about">About</Link>
+                      <Link to="/about" onClick={scrollToTop} >About</Link>
                     </li>
                     <li>
-                      <Link to="/service">
+                      <Link to="/service" onClick={scrollToTop} >
                         Services
                         <i className="fas fa-angle-down" />
                       </Link>
                       
                       <ul className="submenu">
                               <li className="has-dropdown">
-                                <Link to="/it-service">
+                                <Link to="/it-service" onClick={scrollToTop} >
                                   IT Department
                                   <i class="fa-solid fa-angle-right"></i>
 
@@ -74,49 +80,63 @@ const Header = () => {
                                 </Link>
                                 <ul className="submenu">
                                   <li>
-                                    <Link to="/web-development">
+                                    <Link to="/web-development" onClick={scrollToTop} >
                                       Web Development
+                                  <i class="fa-solid fa-angle-right"></i>
+
                                     </Link>
+                                    <ul className="submenu">
+                                  <li>
+                                    <Link to="/wordpress" onClick={scrollToTop} >Wordpress</Link>
                                   </li>
                                   <li>
-                                    <Link to="/android-development">
+                                    <Link to="/shopify" onClick={scrollToTop} >Shopify</Link>
+                                  </li>
+                                  <li>
+                                    <Link to="/e-commerce" onClick={scrollToTop} >E-commerce</Link>
+                                  </li>
+                                  
+                                </ul>
+                                  </li>
+                                  <li>
+                                    <Link to="/android-development" onClick={scrollToTop} >
                                       Android Development
                                     </Link>
                                   </li>
                                 </ul>
                               </li>
                               <li className="has-dropdown">
-                                <Link to="/digital-marketing">
+                                <Link to="/digital-marketing" onClick={scrollToTop} >
                                   Digital Marketing
                                   {/* <FaAngleDown className="angle-down" /> */}
                                   <i class="fa-solid fa-angle-right"></i>
                                 </Link>
                                 <ul className="submenu">
                                   <li>
-                                    <Link to="/seo">SEO</Link>
+                                    <Link to="/seo" onClick={scrollToTop} >SEO</Link>
                                   </li>
                                   <li>
-                                    <Link to="/google">Google Ads</Link>
+                                    <Link to="/google" onClick={scrollToTop} >Google Ads</Link>
                                   </li>
                                   <li>
-                                    <Link to="/meta">Meta Ads</Link>
+                                    <Link to="/meta" onClick={scrollToTop} >Meta Ads</Link>
                                   </li>
                                 </ul>
                               </li>
                               <li>
-                                <Link to="/graphic-designing">
+                                <Link to="/graphic-designing" onClick={scrollToTop} >
                                   Graphic Designing
                                   {/* <FaAngleDown className="angle-down" /> */}
                                   <i class="fa-solid fa-angle-right"></i>
                                 </Link>
                                 <ul className="submenu">
                                   <li>
-                                    <Link to="/influencer-marketing">
+                                    <Link to="/influencer-marketing" onClick={scrollToTop} >
                                       Influencer Marketing
                                     </Link>
                                   </li>
                                   <li>
-                                    <Link to="/social-media">
+                                    <Link to="/social-media" onClick={scrollToTop} >
                                       Social Media Marketing
                                     </Link>
                                   </li>
@@ -125,57 +145,57 @@ const Header = () => {
                             </ul>
                     </li>
                     <li>
-                      <Link to="/blog">
+                      <Link to="/blog" onClick={scrollToTop} >
                         Blog
                         <i className="fas fa-angle-down" />
                       </Link>
                       <ul className="submenu">                        
                         <li>
-                          <Link to="/blog-details">Blog Details</Link>
+                          <Link to="/blog-details" onClick={scrollToTop} >Blog Details</Link>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <Link to="/hire"> Hiring </Link>
+                      <Link to="/hire" onClick={scrollToTop} > Hiring </Link>
                     </li>
                     <li className="has-dropdown">
-                      <Link to="/other">
+                      <Link to="/other" onClick={scrollToTop} >
                         Others
                         <i className="fas fa-angle-down" />
                       </Link>
                       <ul className="submenu">
                         <li className="has-dropdown">
-                          <Link to="/project">Projects</Link>
+                          <Link to="/project" onClick={scrollToTop} >Projects</Link>
                         </li>
                         <li className="has-dropdown">
-                          <Link to="/team">
+                          <Link to="/team" onClick={scrollToTop} >
                             Team
                             <i class="fa-solid fa-angle-right"></i>
 
                           </Link>
                           <ul className="submenu">                        
                         <li>
-                          <Link to="/team-details">Team Details</Link>
+                          <Link to="/team-details" onClick={scrollToTop} >Team Details</Link>
                         </li>
                       </ul>
                          
                         </li>
                         <li>
-                          <Link to="/testimonial">testimonial</Link>
+                          <Link to="/testimonial" onClick={scrollToTop} >testimonial</Link>
                         </li>
                         <li>
-                          <Link to="/pricing">Pricing</Link>
+                          <Link to="/pricing" onClick={scrollToTop} >Pricing</Link>
                         </li>
                         <li>
-                          <Link to="/faq">Faq's</Link>
+                          <Link to="/faq" onClick={scrollToTop} >Faq's</Link>
                         </li>
                         <li>
-                          <Link to="/error">404 Page</Link>
+                          <Link to="/error" onClick={scrollToTop} >404 Page</Link>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <Link to="/contact">Contact</Link>
+                      <Link to="/contact" onClick={scrollToTop} >Contact</Link>
                     </li>
                   </ul>
                 </nav>
@@ -190,7 +210,7 @@ const Header = () => {
               </button>
             </div>
             <div className="header-button">
-              <Link to="/get-quote" className="theme-btn">
+              <Link to="/get-quote" className="theme-btn" onClick={scrollToTop} >
                 GET A QUOTE
               </Link>
             </div>

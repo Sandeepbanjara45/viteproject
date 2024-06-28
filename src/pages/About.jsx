@@ -4,6 +4,8 @@ import ChooseUs from '../components/about/ChooseUs'
 import CtaSection from '../components/about/CtaSection'
 import TeamSection from '../components/about/TeamSection'
 import FaqSection from '../components/about/FaqSection'
+import GrowthSection from '../components/about/GrowthSection'
+import ServiceProductiveSection from '../components/about/ServiceProductiveSection'
 
 const About = () => {
   return (
@@ -13,6 +15,8 @@ const About = () => {
         <CtaSection/>
         <TeamSection/>
         <FaqSection/>
+        <GrowthSection/>
+        <ServiceProductiveSection/>
     </>
   )
 }
